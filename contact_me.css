@@ -1,0 +1,39 @@
+body{
+	/*Using linear-gradient to darken the background image*/
+	background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("https://images.unsplash.com/photo-1468436139062-f60a71c5c892?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb");
+	background-size: cover;
+	background-position: center;
+	color: #e6e6e6;
+	font-family: 'Ubuntu';
+}
+
+
+
+html{
+	height: 100%;
+
+	/*This is to increase the size of the background image*/
+}
+
+.navbar-default{
+	background: white;
+}
+.navbar-default .navbar-brand {
+    color: #777;
+    font-size: 20px
+}
+
+
+.row{
+	font-size: 13em;
+	padding-top: 50%;
+	text-align: center;
+}
+
+.col-sm-6 i{
+	color: rgba(0, 119, 181, 0.5);
+}
+.col-sm-6 i:hover{
+	color: white;
+}
+
