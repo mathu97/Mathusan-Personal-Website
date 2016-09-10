@@ -26,7 +26,7 @@ html{
 
 .row{
 	font-size: 13em;
-	padding-top: 50%;
+	padding-top: 30%;
 	text-align: center;
 }
 
@@ -37,3 +37,10 @@ html{
 	color: white;
 }
 
+.container .contacts_text h1{
+	text-align: center;
+	font-size: 50px;
+	padding-top: 20%;
+	text-transform: uppercase;
+	letter-spacing: 0.6rem;
+}
