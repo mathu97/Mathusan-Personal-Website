@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+    color: white;
+    font-family: 'Ubuntu', sans-serif
+}
+
+.parallax {
+    /* Paralax Scrolling */
+
+    /* The image used */
+    background-image: url("../images/mainPage_BG5.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-default{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.main.parallax{
+    position: relative;
+    text-align: center;
+}
+.main-text{
+  display: none;
+  padding-top: 30%;
+}
+.animate-text{
+  display: inline-block;
+}
+
+.animate-text, .main-text{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.animate-text h1, .main-text h1{
+    text-shadow: 1px 1px 10px black;
+        display: inline;
+}
+
+.typed-cursor{
+    font-size: 45px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
