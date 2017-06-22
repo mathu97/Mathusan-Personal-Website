@@ -24,4 +24,10 @@ function finalIntroAnimation(){
 
 $(function(){
     introAnimation()
+    $('.page-down').click(function(){
+       var nextSection = $(this).closest('.scrolling-section').next('.scrolling-section');
+       $('html, body').animate({
+           scrollTop: $(nextSection).offset().top
+       }, 2000);
+   });
 })
