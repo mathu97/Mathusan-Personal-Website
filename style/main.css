@@ -32,6 +32,16 @@ body, html {
   display: none;
   padding-top: 30%;
 }
+
+.main-text button{
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  padding-top: 1em;
+}
 .animate-text{
   display: inline-block;
 }

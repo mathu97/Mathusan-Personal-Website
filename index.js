@@ -1,6 +1,6 @@
 function introAnimation(){
     Typed.new('.element h1', {
-        strings: [ "CS STUDENT", "SOFTWARE ENGINEER", "ENTREPRENEUR", ""],
+        strings: [ "CS STUDENT", "EMBEDDED SYSTEMS ENGINEER", "IOS DEVELOPER", "WEB DEVELOPER", ""],
         typeSpeed: 0,
         startDelay: 1500,
         backDelay: 600,
