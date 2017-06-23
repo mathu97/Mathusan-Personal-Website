@@ -23,6 +23,7 @@ function finalIntroAnimation(){
 }
 
 $(function(){
+  $(window).on("load", function() {
     introAnimation()
     $('.page-down').click(function(){
        var nextSection = $(this).closest('.scrolling-section').next('.scrolling-section');
@@ -30,4 +31,6 @@ $(function(){
            scrollTop: $(nextSection).offset().top
        }, 2000);
    });
+
+ });
 })
