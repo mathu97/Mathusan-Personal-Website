@@ -22,6 +22,16 @@ function finalIntroAnimation(){
     $(".main-text").fadeIn(2000)
 }
 
+function navbarFunctions(){
+
+  $('#about-me').click(function(){
+    $('html, body').animate({
+        scrollTop: $('.aboutMe').offset().top
+    }, 2000);
+  });
+
+}
+
 $(function(){
   $(window).on("load", function() {
     introAnimation()
@@ -32,5 +42,6 @@ $(function(){
        }, 2000);
    });
 
+   navbarFunctions()
  });
 })
