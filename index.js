@@ -30,6 +30,12 @@ function navbarFunctions(){
     }, 2000);
   });
 
+  $('.navbar-brand').click(function(){
+    $('html, body').animate({
+        scrollTop: $('.landingPage').offset().top
+    }, 2000);
+  });
+
 }
 
 $(function(){
