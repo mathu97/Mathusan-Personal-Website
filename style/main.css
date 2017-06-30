@@ -21,6 +21,10 @@ body, html {
     margin-bottom: 0px;
 }
 
+.main{
+  text-shadow: 1px 1px 10px black;
+}
+
 .main.parallax{
     position: relative;
     text-align: center;
@@ -50,7 +54,6 @@ body, html {
 }
 
 .animate-text h1, .main-text h1{
-    text-shadow: 1px 1px 10px black;
     display: inline;
 }
 
@@ -92,6 +95,9 @@ body, html {
 #Education img{
   position: absolute;
   left: 1.5em;
+}
+.edInfo{
+  text-align: left;
 }
 
 @keyframes blink{
