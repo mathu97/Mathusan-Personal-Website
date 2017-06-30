@@ -7,12 +7,9 @@ body, html {
 .parallax {
     /* Paralax Scrolling */
 
-    /* The image used */
-    background-image: url("../images/mainPage_BG5.jpg");
-
     /* Set a specific height */
     height: 100%;
-
+    background-image: url("../images/mainPage_BG5.jpg");
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -72,21 +69,29 @@ body, html {
 
 /* Need media query for smaller screens for .logoRow and .logoRow img */
 .logoRow{
-  height: 10em;
+  height: 15em;
 }
 
 .logoRow img{
   height: 200px;
   width: 200px;
+
+
+  line-height: 60px;
+  -moz-border-radius: 100px; /* or 50% */
+  border-radius: 100px; /* or 50% */
+  background-color: white;
 }
 
 #Education h1{
   text-shadow: 1px 1px 10px black;
   padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
+  padding-bottom: 2em;
+}
 
-  text-align: left;
+#Education img{
+  position: absolute;
+  left: 1.5em;
 }
 
 @keyframes blink{
@@ -108,4 +113,9 @@ body, html {
 .scrolling-section{
   height: 100%;
   overflow:hidden;
+}
+
+
+.scrolling-section.aboutMe{
+  background-image: url("../images/secondPage.jpg");
 }
