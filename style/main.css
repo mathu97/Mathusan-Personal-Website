@@ -80,6 +80,15 @@ body, html {
   width: 200px;
 }
 
+#Education h1{
+  text-shadow: 1px 1px 10px black;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+
+  text-align: left;
+}
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
@@ -98,4 +107,5 @@ body, html {
 
 .scrolling-section{
   height: 100%;
+  overflow:hidden;
 }
