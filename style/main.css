@@ -100,6 +100,18 @@ body, html {
   text-align: left;
 }
 
+.edInfo h3{
+  padding-bottom: 1em;
+}
+
+.edInfo h4{
+  padding-left: 2em;
+}
+
+.edInfo ul{
+  padding-left: 5em;
+}
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
