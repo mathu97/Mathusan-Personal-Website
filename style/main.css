@@ -9,7 +9,7 @@ body, html {
 
     /* Set a specific height */
     height: 100%;
-    background-image: url("../images/mainPage_BG6.jpg");
+    background-image: url("../images/alternateBG.jpg");
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -86,13 +86,13 @@ body, html {
   background-color: white;
 }
 
-#Education h1{
+.education h1{
   text-shadow: 1px 1px 10px black;
   padding-top: 1em;
   padding-bottom: 2em;
 }
 
-#Education img{
+.education img{
   position: absolute;
   left: 1.5em;
 }
@@ -134,6 +134,15 @@ body, html {
 }
 
 
-.scrolling-section.aboutMe{
-  background-image: url("../images/secondPage.jpg");
+.scrolling-section.education{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/thirdPageBG.jpg");
 }
+
+.scrolling-section.experience{
+
+  background-image: url("../images/alternateSecondPage.jpg");
+}
+
+/*.education .row{
+  background-color:rgba(31, 32, 33, 0.6);
+}*/
