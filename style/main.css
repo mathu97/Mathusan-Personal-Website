@@ -134,6 +134,13 @@ body, html {
   overflow:hidden;
 }
 
+.carousel,.item,.active{
+  height:100%;
+}
+.carousel-inner{
+  height:100%;
+}
+
 
 .scrolling-section.education{
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/thirdPageBG.jpg");
