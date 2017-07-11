@@ -68,6 +68,7 @@ body, html {
 .row{
   margin-right: 0px;
   margin-left: 0px;
+  padding-bottom: 20em;
 }
 
 /* Need media query for smaller screens for .logoRow and .logoRow img */
@@ -76,8 +77,8 @@ body, html {
 }
 
 .logoRow img{
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 
 
   line-height: 60px;
@@ -86,9 +87,9 @@ body, html {
   background-color: white;
 }
 
-.education h1{
+.scrolling-section h1{
   text-shadow: 1px 1px 10px black;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-bottom: 2em;
 }
 
