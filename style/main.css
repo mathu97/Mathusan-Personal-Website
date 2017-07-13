@@ -57,6 +57,10 @@ body, html {
     display: inline;
 }
 
+.carousel-inner section h1{
+  display: inline;
+}
+
 .typed-cursor{
     font-size: 45px;
     opacity: 1;
