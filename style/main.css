@@ -9,13 +9,19 @@ body, html {
 
     /* Set a specific height */
     height: 100%;
-    background-image: url("../images/alternateBG.jpg");
+    background-image: url("../images/secondPage.jpg");
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+
+    /*https://stackoverflow.com/questions/15489165/how-to-fade-out-sides-of-images*/
+    background-image: -webkit-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
+    background-image:  -moz-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
+    background-image:  -o-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
+    background-image:  -ms-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
+    background-image:  linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
+  }
 .navbar-default{
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -149,11 +155,13 @@ body, html {
 
 
 .scrolling-section.education{
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/thirdPageBG.jpg");
+  /*background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/thirdPageBG.jpg");*/
+  background-color: black;
 }
 
 .scrolling-section.experience{
-  background-image: url("../images/alternateSecondPage.jpg");
+  /*background-image: url("../images/alternateSecondPage.jpg");*/
+  background-color: black;
 }
 
 .item{
