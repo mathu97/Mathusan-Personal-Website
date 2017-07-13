@@ -61,6 +61,8 @@ body, html {
   display: inline;
 }
 
+
+
 .typed-cursor{
     font-size: 45px;
     opacity: 1;
@@ -138,7 +140,7 @@ body, html {
   overflow:hidden;
 }
 
-.carousel,.item,.active{
+.carousel, .item, .active{
   height:100%;
 }
 .carousel-inner{
@@ -151,8 +153,15 @@ body, html {
 }
 
 .scrolling-section.experience{
-
   background-image: url("../images/alternateSecondPage.jpg");
+}
+
+.item{
+  padding-top: 1em;
+}
+
+.item .row{
+  padding-top: 3em;
 }
 
 /*.education .row{
