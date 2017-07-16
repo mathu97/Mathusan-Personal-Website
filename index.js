@@ -25,15 +25,16 @@ function finalIntroAnimation(){
     $(".main-text").fadeIn(2000)
 }
 
-function isScrolledIntoView(elem){
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+function checkScroll(){
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    if($(window).scrollTop() > startY){
+        $('.navbar').addClass("scrolled");
+    }else{
+        $('.navbar').removeClass("scrolled");
+    }
 }
+
 
 function navbarFunctions(){
   //Adds action listeners to the navbar buttons
@@ -99,4 +100,9 @@ $(function(){
 
 });
 
+  if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+  }
 });
