@@ -74,6 +74,8 @@ function animateCarouselHeadings(){
 
 $(function(){
   $(window).on("load", function() {
+
+
     introAnimation()
 
     //Type "EXPERIENCE" onto the first carousel
