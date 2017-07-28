@@ -23,6 +23,11 @@ body, html {
     background-image:  linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
   }
 
+nav {
+  /* hide the navbar initially, till load is done*/
+  visibility: hidden;
+}
+
 .navbar {
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -209,4 +214,46 @@ body, html {
   width: 100%;
   height: 50px;
   background-color: #00a087;
+}
+
+.spinner {
+
+  width: 80px;
+  height: 80px;
+
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #f25a41;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  animation: spin 1s infinite linear;
+
+}
+
+@keyframes spin {
+  /* Spinner animation */
+
+    from {
+      transform: rotat(0deg);
+    } to {
+      transform: rotate(360deg);
+    }
+}
+
+#overlay {
+  height: 100%;
+  weight: 100%;
+  background: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9999;
 }

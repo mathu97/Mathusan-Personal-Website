@@ -36,6 +36,7 @@ function checkScroll(){
 }
 
 
+
 function navbarFunctions(){
   //Adds action listeners to the navbar buttons
   $('#about-me').click(function(){
@@ -72,8 +73,19 @@ function animateCarouselHeadings(){
 
 }
 
+function hideSpinner(){
+  $("#overlay").css({
+    "display": "none"
+  });
+
+  //Show the navbar
+  $("nav").slideDown(1000)
+}
 $(function(){
   $(window).on("load", function() {
+
+    // Hide the spinner on load
+    window.setTimeout(hideSpinner, 2000);
 
 
     introAnimation()
