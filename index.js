@@ -79,13 +79,13 @@ function hideSpinner(){
   });
 
   //Show the navbar
-  $("nav").slideDown(1000)
+  $("nav").fadeIn(1000)
 }
 $(function(){
   $(window).on("load", function() {
 
     // Hide the spinner on load
-    window.setTimeout(hideSpinner, 2000);
+    window.setTimeout(hideSpinner, 1000);
 
 
     introAnimation()
