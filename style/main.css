@@ -31,7 +31,7 @@ nav {
 .navbar {
     padding-bottom: 0px;
     margin-bottom: 0px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 1);
     border-color:transparent;
     box-shadow:none;
   }
@@ -63,6 +63,7 @@ nav {
   outline:none;
   padding-top: 1em;
 }
+
 .animate-text{
   display: inline-block;
 }
@@ -77,12 +78,6 @@ nav {
     display: inline;
 }
 
-.carousel-inner section h1{
-  display: inline;
-}
-
-
-
 .typed-cursor{
     font-size: 45px;
     opacity: 1;
@@ -91,52 +86,10 @@ nav {
     animation: blink 0.7s infinite;
 }
 
-.row{
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-bottom: 10em;
-}
-
-/* Need media query for smaller screens for .logoRow and .logoRow img */
-.logoRow{
-  height: 15em;
-}
-
-.logoRow img{
-  height: 170px;
-  width: 170px;
-
-
-  line-height: 60px;
-  -moz-border-radius: 100px; /* or 50% */
-  border-radius: 100px; /* or 50% */
-  background-color: white;
-}
-
 .scrolling-section h1{
   text-shadow: 1px 1px 10px black;
   padding-top: 0.5em;
   padding-bottom: 2em;
-}
-
-.education img{
-  position: absolute;
-  left: 5em;
-}
-.edInfo{
-  text-align: left;
-}
-
-.edInfo h3{
-  padding-bottom: 1em;
-}
-
-.edInfo h4{
-  padding-left: 2em;
-}
-
-.edInfo ul{
-  padding-left: 5em;
 }
 
 @keyframes blink{
@@ -158,36 +111,6 @@ nav {
 .scrolling-section{
   height: 100%;
   overflow:hidden;
-}
-
-.carousel, .item, .active{
-  height:95%;
-}
-.carousel-inner{
-  height:100%;
-}
-
-
-.scrolling-section.education{
-  /*background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/thirdPageBG.jpg");*/
-  background-color: black;
-}
-
-.scrolling-section.experience{
-  /*background-image: url("../images/alternateSecondPage.jpg");*/
-  background-color: black;
-}
-
-.scrolling-section.about-me{
-  background-color: black;
-}
-
-.item{
-  padding-top: 1em;
-}
-
-.item .row{
-  padding-top: 3em;
 }
 
 .link a{
@@ -252,13 +175,105 @@ nav {
   z-index: 9999;
 }
 
-hr{
-  border: 0;
-  height: 3px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 163, 254, 0.75), rgba(255, 255, 255, 0));
+.scrolling-section.about-me{
+  background-color: black;
 }
 
-.carousel-indicators li {
-  background-color: #00A3FE;
-  border-color: #00A3FE;
+/*For experiences section*/
+
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-bottom: 10em;
 }
+
+
+  /* Need media query for smaller screens for .logoRow and .logoRow img */
+  .logoRow{
+    height: 15em;
+  }
+
+  .logoRow img{
+    height: 170px;
+    width: 170px;
+
+
+    line-height: 60px;
+    -moz-border-radius: 100px; /* or 50% */
+    border-radius: 100px; /* or 50% */
+    background-color: white;
+  }
+
+  .link a{
+    color: white;
+    text-decoration:none;
+  }
+
+  .education img, .experience img{
+    position: absolute;
+    left: 5em;
+  }
+
+  .experience  h1{
+    padding-left: 1em;
+  }
+
+  .edInfo{
+    text-align: left;
+  }
+
+  .edInfo h3{
+    padding-bottom: 1em;
+  }
+
+  .edInfo h4{
+    padding-left: 2em;
+  }
+
+  .edInfo ul{
+    padding-left: 5em;
+  }
+
+  .scrolling-section{
+    height: 100%;
+    overflow:hidden;
+  }
+
+  .carousel, .item, .active{
+    height:95%;
+  }
+
+  .carousel-inner{
+    height:100%;
+  }
+
+  .scrolling-section.education{
+    /*background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/thirdPageBG.jpg");*/
+    background-color: black;
+  }
+
+  .myinfo{
+    /*background-image: url("../images/alternateSecondPage.jpg");*/
+    background-color: black;
+  }
+
+  .scrolling-section h1{
+    text-shadow: 1px 1px 10px black;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+  }
+
+
+  .item{
+    padding-top: 1em;
+  }
+
+  .item .row{
+    padding-top: 3em;
+  }
+
+  hr{
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 163, 254, 0.75), rgba(255, 255, 255, 0));
+  }

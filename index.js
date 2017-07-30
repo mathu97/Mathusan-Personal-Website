@@ -53,17 +53,11 @@ function navbarFunctions(){
 
 }
 
-function animateCarouselHeadings(){
-  //Animates the carousel headings
-  var currentIndex = $('div.active').index() + 1;
-  console.log(currentIndex)
-  var heading = ""
-  if (currentIndex == 1)
-     heading = "EDUCATION"
-  else if (currentIndex == 2)
-     heading = "EXPEREINCE"
+function animateExperiences(){
 
-  Typed.new('.carousel-inner section h1', {
+  var heading = "Work"
+
+  Typed.new('.experience h1', {
       strings: [heading],
       typeSpeed: 0,
       startDelay: 500,
@@ -90,19 +84,10 @@ $(function(){
 
     introAnimation()
 
-    //Type "EXPERIENCE" onto the first carousel
-    Typed.new('.carousel-inner section h1', {
-        strings: ["EXPEREINCE"],
-        typeSpeed: 0,
-        startDelay: 500,
-        backDelay: 600,
-        callback: function() {}
-    });
-
     $('.page-down').click(function(){
        var nextSection = $(this).closest('.scrolling-section').next('.scrolling-section');
        $('html, body').animate({
-           scrollTop: $(nextSection).offset().top - 40 
+           scrollTop: $(nextSection).offset().top - 40
        }, 2000);
    });
 
