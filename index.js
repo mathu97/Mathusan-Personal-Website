@@ -102,7 +102,7 @@ $(function(){
     $('.page-down').click(function(){
        var nextSection = $(this).closest('.scrolling-section').next('.scrolling-section');
        $('html, body').animate({
-           scrollTop: $(nextSection).offset().top
+           scrollTop: $(nextSection).offset().top - 40 
        }, 2000);
    });
 
