@@ -260,6 +260,7 @@ nav {
   .experience h1{
     text-align: left;
     letter-spacing: 0.3em;
+    font-size: 1.7em;
   }
 
   .scrolling-section h1{
@@ -267,7 +268,6 @@ nav {
     padding-top: 0.5em;
     padding-bottom: 2em;
   }
-
 
   .item{
     padding-top: 1em;

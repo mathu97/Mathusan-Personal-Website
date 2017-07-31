@@ -27,17 +27,24 @@ function finalIntroAnimation(){
 
 function navbarFunctions(){
   //Adds action listeners to the navbar buttons
-  $('#about-me').click(function(){
-    $('html, body').animate({
-        scrollTop: $('.aboutMe').offset().top
-    }, 1000);
-  });
-
   $('.navbar-brand').click(function(){
     $('html, body').animate({
         scrollTop: $('.landingPage').offset().top
     }, 1000);
   });
+
+  $('#about-me').click(function(){
+    $('html, body').animate({
+        scrollTop: $('.about-me').offset().top
+    }, 1000);
+  });
+
+  $('#experience').click(function(){
+    $('html, body').animate({
+        scrollTop: $('.myinfo').offset().top -40
+    }, 1000);
+  });
+
 
 }
 
@@ -48,7 +55,7 @@ function animateExperiences(){
   if (isElementInViewport($(".experience h1"))) {
     $(".experience h1").addClass('start')
     $(".experience h1").animate({
-      "font-size": "3em"
+      "font-size": "2.2em"
     }, 1000, function(){
       console.log("Reaches here")
     });
