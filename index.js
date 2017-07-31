@@ -30,19 +30,19 @@ function navbarFunctions(){
   $('.navbar-brand').click(function(){
     $('html, body').animate({
         scrollTop: $('.landingPage').offset().top
-    }, 1000);
+    }, 500);
   });
 
   $('#about-me').click(function(){
     $('html, body').animate({
         scrollTop: $('.about-me').offset().top
-    }, 1000);
+    }, 500);
   });
 
   $('#experience').click(function(){
     $('html, body').animate({
         scrollTop: $('.myinfo').offset().top -40
-    }, 1000);
+    }, 500);
   });
 
 
@@ -105,7 +105,7 @@ $(function(){
        var nextSection = $(this).closest('.scrolling-section').next('.scrolling-section');
        $('html, body').animate({
            scrollTop: $(nextSection).offset().top - 40
-       }, 2000);
+       }, 500);
    });
 
    $(window).scroll(function(){
