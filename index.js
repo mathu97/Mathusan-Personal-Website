@@ -48,13 +48,19 @@ function navbarFunctions(){
 
 }
 
-function animateSectionTitle() {
+function animateAboutTitle() {
   if ($(".about-me h1").hasClass('start')) return;
 
   if (isElementInViewport($(".about-me h1"))) {
     $(".about-me h1").addClass('start')
+    var fontSize = "2.2em"
+
+    if($(window).width() < 481){
+      fontSize = "1.5em"
+    }
+
     $(".about-me h1").animate({
-      "font-size": "2.2em"
+      "font-size": fontSize
     }, 1000, function(){
 
     });
@@ -67,8 +73,15 @@ function animateExperienceTitle() {
 
   if (isElementInViewport($(".experience h1"))) {
     $(".experience h1").addClass('start')
+
+    var fontSize = "2.2em"
+
+    if($(window).width() < 481){
+      fontSize = "1.5em"
+    }
+
     $(".experience h1").animate({
-      "font-size": "2.2em"
+      "font-size": fontSize
     }, 1000, function(){
 
     });
@@ -122,7 +135,7 @@ $(function(){
 
    $(window).scroll(function(){
      animateExperienceTitle()
-     animateSectionTitle()
+     animateAboutTitle()
    });
 
 });

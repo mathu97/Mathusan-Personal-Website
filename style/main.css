@@ -284,3 +284,35 @@ nav {
     height: 3px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 163, 254, 0.75), rgba(255, 255, 255, 0));
   }
+
+  /*Media query for mobile devices*/
+  @media (max-width: 575px) {
+    .edInfo h3{
+      padding-bottom: 0.5em;
+      font-size: 1.5em;
+    }
+
+    .edInfo h4{
+      padding-left: 1em;
+      font-size: 1em;
+    }
+
+    .edInfo ul{
+      padding-left: 3em;
+    }
+
+    .logoRow img{
+      height: 100px;
+      width: 100px;
+    }
+
+    .education img, .experience img{
+      position: absolute;
+      left: 2em;
+    }
+
+    .experience h1, .about-me h1{
+      font-size: 1em;
+    }
+
+  }
