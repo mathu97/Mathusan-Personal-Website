@@ -1,3 +1,5 @@
+var SCROLL_ANIMTAED_ELEMENTS = [$(".about-me h1"), $(".experience h1")]
+
 function introAnimation(){
   //Animation that loops through a couple words
     Typed.new('.element h1', {
@@ -48,43 +50,26 @@ function navbarFunctions(){
 
 }
 
-function animateAboutTitle() {
-  if ($(".about-me h1").hasClass('start')) return;
+function animateTitleOnScroll() {
 
-  if (isElementInViewport($(".about-me h1"))) {
-    $(".about-me h1").addClass('start')
-    var fontSize = "2.2em"
+  for (var animateItem in SCROLL_ANIMTAED_ELEMENTS){
+    console.log(animateItem)
+    if (isElementInViewport(animateItem) &&	!animateItem.hasClass('start')) {
 
-    if($(window).width() < 481){
-      fontSize = "1.5em"
+      animateItem.addClass('start')
+      var fontSize = "2.2em"
+
+      if($(window).width() < 481){
+        fontSize = "1.5em"
+      }
+
+      animateItem.animate({
+        "font-size": fontSize
+      }, 1000, function(){
+
+      });
     }
 
-    $(".about-me h1").animate({
-      "font-size": fontSize
-    }, 1000, function(){
-
-    });
-  }
-}
-
-function animateExperienceTitle() {
-
-  if ($(".experience h1").hasClass('start')) return;
-
-  if (isElementInViewport($(".experience h1"))) {
-    $(".experience h1").addClass('start')
-
-    var fontSize = "2.2em"
-
-    if($(window).width() < 481){
-      fontSize = "1.5em"
-    }
-
-    $(".experience h1").animate({
-      "font-size": fontSize
-    }, 1000, function(){
-
-    });
   }
 
 }
@@ -134,8 +119,7 @@ $(function(){
    });
 
    $(window).scroll(function(){
-     animateExperienceTitle()
-     animateAboutTitle()
+     animateTitleOnScroll()
    });
 
 });

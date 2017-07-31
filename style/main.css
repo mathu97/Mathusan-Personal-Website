@@ -287,6 +287,14 @@ nav {
 
   /*Media query for mobile devices*/
   @media (max-width: 575px) {
+    .animate-text h1, .main-text h1{
+        font-size: 2em;
+    }
+
+    .main-text h4 {
+      font-size: 1em;
+    }
+
     .edInfo h3{
       padding-bottom: 0.5em;
       font-size: 1.5em;
@@ -312,7 +320,7 @@ nav {
     }
 
     .experience h1, .about-me h1{
-      font-size: 1em;
+      font-size: 1.2em;
     }
 
   }
