@@ -78,6 +78,10 @@ nav {
     display: inline;
 }
 
+.main-text h1 {
+  letter-spacing: 0.3em;
+}
+
 .typed-cursor{
     font-size: 45px;
     opacity: 1;
