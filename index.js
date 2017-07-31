@@ -25,18 +25,6 @@ function finalIntroAnimation(){
     $(".main-text").fadeIn(2000)
 }
 
-function checkScroll(){
-    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
-
-    if($(window).scrollTop() > startY){
-        $('.navbar').addClass("scrolled");
-    }else{
-        $('.navbar').removeClass("scrolled");
-    }
-}
-
-
-
 function navbarFunctions(){
   //Adds action listeners to the navbar buttons
   $('#about-me').click(function(){
@@ -55,15 +43,12 @@ function navbarFunctions(){
 
 function animateExperiences(){
 
-  var heading = "Work"
+  if ($(".experience h1").hasClass('start')) return;
 
-  Typed.new('.experience h1', {
-      strings: [heading],
-      typeSpeed: 0,
-      startDelay: 500,
-      backDelay: 600,
-      callback: function() {}
-  });
+  if (isElementInViewport($(".experience h1"))) {
+    $(".experience h1").addClass('start')
+    $(".experience h1").animate({fontSize: '3em'}, "slow");
+  }
 
 }
 
@@ -75,6 +60,25 @@ function hideSpinner(){
   //Show the navbar
   $("nav").fadeIn(1000)
 }
+
+function isElementInViewport(elem) {
+  // https://stackoverflow.com/questions/16325679/activate-css3-animation-when-the-content-scrolls-into-view
+
+  var $elem = $(elem);
+
+  // Get the scroll position of the page.
+  var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+  var viewportTop = $(scrollElem).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  // Get the position of the element on the page.
+  var elemTop = Math.round( $elem.offset().top );
+  var elemBottom = elemTop + $elem.height();
+
+  return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+}
+
+
 $(function(){
   $(window).on("load", function() {
 
@@ -83,6 +87,8 @@ $(function(){
 
 
     introAnimation()
+    animateExperiences()
+    navbarFunctions()
 
     $('.page-down').click(function(){
        var nextSection = $(this).closest('.scrolling-section').next('.scrolling-section');
@@ -91,17 +97,10 @@ $(function(){
        }, 2000);
    });
 
-   navbarFunctions()
-
-   $(".carousel-control").click(function(){
-     animateCarouselHeadings()
+   $(window).scroll(function(){
+     animateExperiences()
    });
 
 });
 
-  if($('.navbar').length > 0){
-    $(window).on("scroll load resize", function(){
-        checkScroll();
-    });
-  }
 });

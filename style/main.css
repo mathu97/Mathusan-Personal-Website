@@ -257,6 +257,10 @@ nav {
     background-color: black;
   }
 
+  .experience h1{
+    text-align: left;
+  }
+
   .scrolling-section h1{
     text-shadow: 1px 1px 10px black;
     padding-top: 0.5em;
