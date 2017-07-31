@@ -35,7 +35,7 @@ function navbarFunctions(){
 
   $('#about-me').click(function(){
     $('html, body').animate({
-        scrollTop: $('.about-me').offset().top
+        scrollTop: $('.about-me').offset().top -40
     }, 500);
   });
 
@@ -48,7 +48,20 @@ function navbarFunctions(){
 
 }
 
-function animateExperiences(){
+function animateSectionTitle() {
+  if ($(".about-me h1").hasClass('start')) return;
+
+  if (isElementInViewport($(".about-me h1"))) {
+    $(".about-me h1").addClass('start')
+    $(".about-me h1").animate({
+      "font-size": "2.2em"
+    }, 1000, function(){
+
+    });
+  }
+}
+
+function animateExperienceTitle() {
 
   if ($(".experience h1").hasClass('start')) return;
 
@@ -57,7 +70,7 @@ function animateExperiences(){
     $(".experience h1").animate({
       "font-size": "2.2em"
     }, 1000, function(){
-      console.log("Reaches here")
+
     });
   }
 
@@ -98,7 +111,6 @@ $(function(){
 
 
     introAnimation()
-    animateExperiences()
     navbarFunctions()
 
     $('.page-down').click(function(){
@@ -109,7 +121,8 @@ $(function(){
    });
 
    $(window).scroll(function(){
-     animateExperiences()
+     animateExperienceTitle()
+     animateSectionTitle()
    });
 
 });

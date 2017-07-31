@@ -134,7 +134,7 @@ nav {
   left: 0;
   z-index: 9999;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
 }
 
 .spinner {
@@ -218,10 +218,6 @@ nav {
     left: 5em;
   }
 
-  .experience  h1{
-    padding-left: 1em;
-  }
-
   .edInfo{
     text-align: left;
   }
@@ -261,9 +257,11 @@ nav {
     background-color: black;
   }
 
-  .experience h1{
+  .experience h1, .about-me h1{
     text-align: left;
     letter-spacing: 0.3em;
+    padding-top: 0.5em;
+    padding-left: 1em;
     font-size: 1.7em;
   }
 
