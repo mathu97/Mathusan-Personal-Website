@@ -3,7 +3,7 @@ function introAnimation(){
     Typed.new('.element h1', {
         strings: [ "CS STUDENT", "IOS DEVELOPER", "WEB DEVELOPER", "SOFTWARE ENGINEER", ""],
         typeSpeed: 0,
-        startDelay: 1500,
+        startDelay: 1000,
         backDelay: 600,
         callback: function() {
             postIntroAnimation(finalIntroAnimation)
@@ -13,7 +13,7 @@ function introAnimation(){
 
 function postIntroAnimation(callback){
   //Makes the typed intro fade away
-    $(".animate-text").fadeOut(2000);
+    $(".animate-text").fadeOut(1000);
     callback()
 }
 
@@ -22,7 +22,7 @@ function finalIntroAnimation(){
     $(".animate-text").css({
       "display": "none"
     });
-    $(".main-text").fadeIn(2000)
+    $(".main-text").fadeIn(1000)
 }
 
 function navbarFunctions(){
@@ -30,13 +30,13 @@ function navbarFunctions(){
   $('#about-me').click(function(){
     $('html, body').animate({
         scrollTop: $('.aboutMe').offset().top
-    }, 2000);
+    }, 1000);
   });
 
   $('.navbar-brand').click(function(){
     $('html, body').animate({
         scrollTop: $('.landingPage').offset().top
-    }, 2000);
+    }, 1000);
   });
 
 }
@@ -47,7 +47,11 @@ function animateExperiences(){
 
   if (isElementInViewport($(".experience h1"))) {
     $(".experience h1").addClass('start')
-    $(".experience h1").animate({fontSize: '3em'}, "slow");
+    $(".experience h1").animate({
+      "font-size": "3em"
+    }, 1000, function(){
+      console.log("Reaches here")
+    });
   }
 
 }
