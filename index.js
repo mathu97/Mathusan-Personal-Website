@@ -1,4 +1,4 @@
-var SCROLL_ANIMTAED_ELEMENTS = [$(".about-me h1"), $(".experience h1")]
+var SCROLL_ANIMTAED_ELEMENTS = [".about-me h1", ".experience h1"]
 
 function introAnimation(){
   //Animation that loops through a couple words
@@ -52,18 +52,19 @@ function navbarFunctions(){
 
 function animateTitleOnScroll() {
 
-  for (var animateItem in SCROLL_ANIMTAED_ELEMENTS){
-    console.log(animateItem)
-    if (isElementInViewport(animateItem) &&	!animateItem.hasClass('start')) {
+  for (var item in SCROLL_ANIMTAED_ELEMENTS){
+    
+    var animateItem = SCROLL_ANIMTAED_ELEMENTS[item]
+    if (isElementInViewport(animateItem) &&	!$(animateItem).hasClass('start')) {
 
-      animateItem.addClass('start')
+      $(animateItem).addClass('start')
       var fontSize = "2.2em"
 
       if($(window).width() < 481){
         fontSize = "1.5em"
       }
 
-      animateItem.animate({
+      $(animateItem).animate({
         "font-size": fontSize
       }, 1000, function(){
 
