@@ -1,4 +1,4 @@
-var SCROLL_ANIMTAED_ELEMENTS = [".about-me h1", ".experience h1", ".contact-me h1"]
+var SCROLL_ANIMATED_ELEMENTS = [".about-me h1", ".experience h1", ".contact-me h1"]
 
 function introAnimation(){
   //Animation that loops through a couple words
@@ -52,9 +52,9 @@ function navbarFunctions(){
 
 function animateTitleOnScroll() {
 
-  for (var item in SCROLL_ANIMTAED_ELEMENTS){
+  for (var item in SCROLL_ANIMATED_ELEMENTS){
 
-    var animateItem = SCROLL_ANIMTAED_ELEMENTS[item]
+    var animateItem = SCROLL_ANIMATED_ELEMENTS[item]
     if (isElementInViewport(animateItem) &&	!$(animateItem).hasClass('start')) {
 
       $(animateItem).addClass('start')
