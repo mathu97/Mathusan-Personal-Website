@@ -1,9 +1,9 @@
-var SCROLL_ANIMTAED_ELEMENTS = [".about-me h1", ".experience h1"]
+var SCROLL_ANIMTAED_ELEMENTS = [".about-me h1", ".experience h1", ".contact-me h1"]
 
 function introAnimation(){
   //Animation that loops through a couple words
     Typed.new('.element h1', {
-        strings: [ "CS STUDENT", "IOS DEVELOPER", "WEB DEVELOPER", "SOFTWARE ENGINEER", ""],
+        strings: [ "TECH ENTHUSIAST", "CS STUDENT", "IOS / WEB DEVELOPER", ""],
         typeSpeed: 0,
         startDelay: 1000,
         backDelay: 600,
@@ -53,7 +53,7 @@ function navbarFunctions(){
 function animateTitleOnScroll() {
 
   for (var item in SCROLL_ANIMTAED_ELEMENTS){
-    
+
     var animateItem = SCROLL_ANIMTAED_ELEMENTS[item]
     if (isElementInViewport(animateItem) &&	!$(animateItem).hasClass('start')) {
 
@@ -66,7 +66,7 @@ function animateTitleOnScroll() {
 
       $(animateItem).animate({
         "font-size": fontSize
-      }, 1000, function(){
+      }, 500, function(){
 
       });
     }

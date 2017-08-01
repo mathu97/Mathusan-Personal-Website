@@ -137,6 +137,20 @@ nav {
   min-height: 50px;
 }
 
+.contactDiv {
+  width: 50%;
+  height: 40%;
+  margin: 0 auto;
+  background-color: white;
+
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-70%);
+  -ms-transform: translateY(-70%);
+  transform: translateY(-70%);
+}
+
+
 .spinner {
 
   width: 80px;
@@ -179,7 +193,7 @@ nav {
   z-index: 9999;
 }
 
-.scrolling-section.about-me{
+.scrolling-section.about-me, .scrolling-section.myinfo, .scrolling-section.contact-me{
   background-color: black;
 }
 
@@ -240,29 +254,19 @@ nav {
   }
 
   .carousel, .item, .active{
-    height:95%;
+    height: 95%;
   }
 
   .carousel-inner{
-    height:100%;
+    height: 100%;
   }
 
-  .scrolling-section.education{
-    /*background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/thirdPageBG.jpg");*/
-    background-color: black;
-  }
-
-  .myinfo{
-    /*background-image: url("../images/alternateSecondPage.jpg");*/
-    background-color: black;
-  }
-
-  .experience h1, .about-me h1{
+  .experience h1, .about-me h1, .contact-me h1{
     text-align: left;
     letter-spacing: 0.3em;
     padding-top: 0.5em;
     padding-left: 1em;
-    font-size: 1.7em;
+    font-size: 2em;
   }
 
   .scrolling-section h1{
