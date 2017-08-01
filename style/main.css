@@ -138,7 +138,7 @@ nav {
 }
 
 .contactDiv {
-  width: 50%;
+  width: 70%;
   height: 40%;
   margin: 0 auto;
   background-color: white;
@@ -150,6 +150,9 @@ nav {
   transform: translateY(-70%);
 }
 
+.contactButton {
+  background-color: blue;
+}
 
 .spinner {
 
@@ -323,7 +326,7 @@ nav {
       left: 2em;
     }
 
-    .experience h1, .about-me h1{
+    .experience h1, .about-me h1, .contact-me h1{
       font-size: 1.2em;
     }
 
