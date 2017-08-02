@@ -1,7 +1,10 @@
 body, html {
     height: 100%;
     color: white;
-    font-family: 'Ubuntu', sans-serif
+    font-family: 'Ubuntu', sans-serif;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
 }
 
 .parallax {
@@ -138,11 +141,12 @@ nav {
 }
 
 .contactDiv {
-  width: 70%;
+  width: 50%;
   height: 40%;
-  margin: 0 auto;
-  background-color: white;
-
+  margin: 0 auto 0 auto;
+  background-color: transparent;
+  display: block;
+  padding: 0;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-70%);
@@ -151,7 +155,33 @@ nav {
 }
 
 .contactButton {
-  background-color: blue;
+  display: inline-block;
+  border: solid;
+  border-width: 2px;
+  border-color: #00A3FE;
+
+  color: #00A3FE;
+  background-color: black;
+
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 10px;
+
+  width: 200px;
+  padding: 4px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+  -webkit-transition-duration: 0.6s; /* Safari */
+  transition-duration: 0.6s;
+}
+
+.contactButton:hover {
+  background-color: #00A3FE;
+  color: white;
 }
 
 .spinner {
