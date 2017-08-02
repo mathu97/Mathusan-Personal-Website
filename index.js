@@ -47,6 +47,16 @@ function navbarFunctions(){
     }, 500);
   });
 
+  $('#get-in-touch').click(function(){
+    $('html, body').animate({
+        scrollTop: $('.contact-me').offset().top -40
+    }, 500);
+  });
+
+  $('.nav a').on('click', function(){
+    $('.navbar-toggle').click()
+  });
+
 
 }
 
