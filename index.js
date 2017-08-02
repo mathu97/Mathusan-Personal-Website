@@ -116,7 +116,7 @@ $(function(){
        var nextSection = $(this).closest('.scrolling-section').next('.scrolling-section');
        $('html, body').animate({
            scrollTop: $(nextSection).offset().top - 40
-       }, 500);
+       }, 700);
    });
 
    $(window).scroll(function(){
