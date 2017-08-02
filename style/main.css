@@ -59,7 +59,7 @@ nav {
 
 .main-text button{
   background-color: Transparent;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   overflow: hidden;
@@ -127,9 +127,9 @@ nav {
 }
 
 .link:hover, .link a:hover{
-  -webkit-transition-duration: 1s; /* Safari */
-  transition-duration: 1s;
-  color: #00A3FE;
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .fixed-nav-bar {
@@ -321,6 +321,21 @@ nav {
     padding-left: 1em;
     font-size: 2em;
   }
+
+  span.highlight {
+    background-color: rgba(0, 163, 254, 0.8);
+  }
+
+  /*
+  .experience h3, .about-me h3, .contact-me h3:after{
+    background: #C8C8FF;
+    position: absolute;
+    transition: all .5s ease 0s;
+  }
+
+  .experience h3.highlight, .about-me h3.highlight, .contact-me h3.highlight:after{
+    width: 100%;
+  }*/
 
   .scrolling-section h1{
     text-shadow: 1px 1px 10px black;
