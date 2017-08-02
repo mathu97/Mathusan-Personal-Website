@@ -29,6 +29,11 @@ function finalIntroAnimation(){
 
 function navbarFunctions(){
   //Adds action listeners to the navbar buttons
+  var offset = 40;
+  if($(window).width() < 481){
+    offset = 30
+  }
+
   $('.navbar-brand').click(function(){
     $('html, body').animate({
         scrollTop: $('.landingPage').offset().top
@@ -37,19 +42,19 @@ function navbarFunctions(){
 
   $('#about-me').click(function(){
     $('html, body').animate({
-        scrollTop: $('.about-me').offset().top -40
+        scrollTop: $('.about-me').offset().top -offset
     }, 500);
   });
 
   $('#experience').click(function(){
     $('html, body').animate({
-        scrollTop: $('.myinfo').offset().top -40
+        scrollTop: $('.myinfo').offset().top -offset
     }, 500);
   });
 
   $('#get-in-touch').click(function(){
     $('html, body').animate({
-        scrollTop: $('.contact-me').offset().top -40
+        scrollTop: $('.contact-me').offset().top -offset
     }, 500);
   });
 
@@ -122,10 +127,15 @@ $(function(){
     introAnimation()
     navbarFunctions()
 
+    var offset = 40;
+    if($(window).width() < 481){
+      offset = 30
+    }
+
     $('.page-down').click(function(){
        var nextSection = $(this).closest('.scrolling-section').next('.scrolling-section');
        $('html, body').animate({
-           scrollTop: $(nextSection).offset().top - 40
+           scrollTop: $(nextSection).offset().top - offset
        }, 700);
    });
 
