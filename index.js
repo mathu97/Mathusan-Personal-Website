@@ -61,7 +61,7 @@ function animateTitleOnScroll() {
       var fontSize = "2.2em"
 
       if($(window).width() < 481){
-        fontSize = "1.5em"
+        fontSize = "1.8em"
       }
 
       $(animateItem).animate({
