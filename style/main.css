@@ -315,10 +315,6 @@ nav {
     padding-left: 5em;
   }
 
-  .scrolling-section{
-    height: 100%;
-    overflow:hidden;
-  }
 
   .carousel, .item, .active{
     height: 95%;
@@ -373,6 +369,9 @@ nav {
 
   /*Media query for mobile devices*/
   @media (max-width: 575px) {
+    .contact-me {
+      overflow-y: scroll;
+    }
     .animate-text h1, .main-text h1{
         font-size: 2.2em;
     }
@@ -419,6 +418,9 @@ nav {
 
     .contactButton i{
       font-size: 1.7em;
+    }
+    .lastButton {
+      margin-bottom: 100px;
     }
 
 
