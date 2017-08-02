@@ -8,8 +8,6 @@ body, html {
 }
 
 .parallax {
-    /* Paralax Scrolling */
-
     /* Set a specific height */
     height: 100%;
     background-image: url("../images/secondPage.jpg");
@@ -24,6 +22,22 @@ body, html {
     background-image:  -o-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
     background-image:  -ms-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
     background-image:  linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
+  }
+
+  .parallax-opposite {
+    height: 100%;
+    background-image: url("../images/secondPage.jpg");
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*https://stackoverflow.com/questions/15489165/how-to-fade-out-sides-of-images*/
+    background-image: -webkit-linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 100%), url("../images/secondPage.jpg");
+    background-image:  -moz-linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 100%), url("../images/secondPage.jpg");
+    background-image:  -o-linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 100%), url("../images/secondPage.jpg");
+    background-image:  -ms-linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 100%), url("../images/secondPage.jpg");
+    background-image:  linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 100%), url("../images/secondPage.jpg");
   }
 
 nav {
@@ -160,9 +174,9 @@ nav {
   position: relative;
   border: solid;
   border-width: 2px;
-  border-color: #00A3FE;
+  border-color: rgba(0, 163, 254, 0.6);
   color: #00A3FE;
-  background-color: black;
+  background-color: rgba(0,0,0, 0.3);
 
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
