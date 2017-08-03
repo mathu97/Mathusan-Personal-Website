@@ -157,8 +157,8 @@ nav {
 
 .contactDiv {
   width: 50%;
-  height: 70%;
-  top: 45%;
+  height: 40%;
+  top: 50%;
   margin: 0 auto 0 auto;
   background-color: transparent;
   display: block;
@@ -410,6 +410,12 @@ nav {
     .experience h1, .about-me h1, .contact-me h1{
       font-size: 1.2em;
       line-height: 1.9em;
+    }
+
+    .contactDiv {
+      width: 50%;
+      height: 70%;
+      top: 45%;
     }
 
     .contactButton {
