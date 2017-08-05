@@ -334,6 +334,8 @@ nav {
 
   span.highlight {
     background-color: rgba(0, 163, 254, 0.8);
+    padding: 5px 5px;
+    box-shadow:5px 0 0 #000, -5px 0 0 #000;
   }
 
   /*
