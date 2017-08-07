@@ -71,7 +71,7 @@ nav {
   padding-top: 30%;
 }
 
-.main-text button{
+.main-text button, .aboutMe-Text button, .experience button{
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
