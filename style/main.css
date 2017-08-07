@@ -436,9 +436,14 @@ nav {
       left: 2em;
     }
 
-    .experience h1, .about-me h1, .contact-me h1{
+    .experience h1, .contact-me h1{
       font-size: 1.2em;
       line-height: 1.9em;
+    }
+
+    .about-me h1 {
+      font-size: 1.2em;
+      line-height: 0.5em;
     }
 
     .contactDiv {
@@ -458,6 +463,34 @@ nav {
       font-size: 1.7em;
     }
 
+    .aboutMe-Text {
+      padding-top: 10px;
+      padding-right: 10%;
+      padding-left: 10%;
+      letter-spacing: 0.1em;
+    }
 
+    .aboutMe-Text h2 {
+      text-align: left;
+      font-size: 1.5em;
+      line-height: 35px;
+    }
+
+    .aboutMe-Text h3 {
+      text-align: left;
+      font-size: 1.3em;
+      line-height: 35px;
+    }
+
+    .aboutMe-Text h4 {
+      padding-top: 25px;
+      text-align: left;
+      font-size: 1em;
+      line-height: 35px;
+    }
+
+    .about-me{
+      height: 150%;
+    }
 
   }
