@@ -332,6 +332,33 @@ nav {
     font-size: 2em;
   }
 
+  .aboutMe-Text {
+    padding-top: 40px;
+    padding-right: 20%;
+    padding-left: 20%;
+    letter-spacing: 0.1em;
+  }
+
+  .aboutMe-Text h2 {
+    text-align: left;
+    font-size: 1.8em;
+    line-height: 35px;
+  }
+
+  .aboutMe-Text h3 {
+    text-align: left;
+    font-size: 1.6em;
+    line-height: 35px;
+  }
+
+  .aboutMe-Text h4 {
+    padding-top: 25px;
+    text-align: left;
+    font-size: 1.3em;
+    line-height: 35px;
+  }
+
+
   span.highlight {
     background-color: rgba(0, 163, 254, 0.8);
     padding: 5px 5px;
