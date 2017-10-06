@@ -463,6 +463,10 @@ nav {
       font-size: 1.7em;
     }
 
+    .link button{
+      color: white;
+    }
+
     .aboutMe-Text {
       padding-top: 10px;
       padding-right: 10%;
