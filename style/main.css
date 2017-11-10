@@ -415,6 +415,10 @@ nav {
     letter-spacing: 0.4em;
   }
 
+  #logo {
+    display: none;
+  }
+
   /*Media query for mobile devices*/
   @media (max-width: 575px) {
 
