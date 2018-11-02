@@ -139,9 +139,9 @@ $(function() {
             }, 700);
         });
 
-        $(window).scroll(function() {
-            animateTitleOnScroll()
-        });
+        // $(window).scroll(function() {
+        //     animateTitleOnScroll()
+        // });
 
     });
 
