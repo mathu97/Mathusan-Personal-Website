@@ -1,10 +1,11 @@
-body, html {
+body,
+html {
     height: 100%;
     color: white;
     font-family: 'Ubuntu', sans-serif;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .parallax {
@@ -15,50 +16,48 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     /*https://stackoverflow.com/questions/15489165/how-to-fade-out-sides-of-images*/
-    background-image: -webkit-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
-    background-image:  -moz-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
-    background-image:  -o-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
-    background-image:  -ms-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
-    background-image:  linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url("../images/secondPage.jpg");
-  }
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("../images/secondPage.jpg");
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("../images/secondPage.jpg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("../images/secondPage.jpg");
+    background-image: -ms-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("../images/secondPage.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("../images/secondPage.jpg");
+}
 
-  .parallax-opposite {
+.parallax-opposite {
     height: 100%;
     background-image: url("../images/secondPage.jpg");
     /* Create the parallax scrolling effect */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     /*https://stackoverflow.com/questions/15489165/how-to-fade-out-sides-of-images*/
-    background-image: -webkit-linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 100%), url("../images/secondPage.jpg");
-    background-image:  -moz-linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 100%), url("../images/secondPage.jpg");
-    background-image:  -o-linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 100%), url("../images/secondPage.jpg");
-    background-image:  -ms-linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 100%), url("../images/secondPage.jpg");
-    background-image:  linear-gradient(rgba(0,0,0, 1) 0%,rgba(0,0,0, 0) 100%), url("../images/secondPage.jpg");
-  }
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url("../images/secondPage.jpg");
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url("../images/secondPage.jpg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url("../images/secondPage.jpg");
+    background-image: -ms-linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url("../images/secondPage.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url("../images/secondPage.jpg");
+}
 
 nav {
-  /* hide the navbar initially, till load is done*/
-  display: none;
+    /* hide the navbar initially, till load is done*/
+    display: none;
 }
 
 .navbar {
     padding-bottom: 0px;
     margin-bottom: 0px;
     background: rgba(0, 0, 0, 1);
-    border-color:transparent;
-    box-shadow:none;
-  }
+    border-color: transparent;
+    box-shadow: none;
+}
 
 .navbar-inverse .navbar-nav>li>a {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 .main {
-  text-shadow: 1px 1px 10px black;
+    text-shadow: 1px 1px 10px black;
 }
 
 .main.parallax {
@@ -67,40 +66,44 @@ nav {
 }
 
 .main-text {
-  display: none;
-  padding-top: 30%;
+    display: none;
+    padding-top: 30%;
 }
 
-.main-text button, .aboutMe-Text button, .experience button{
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline:none;
-  padding-top: 1em;
-  font-size: 2em;
+.main-text button,
+.aboutMe-Text button,
+.experience button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding-top: 1em;
+    font-size: 2em;
 }
 
-.animate-text{
-  display: inline-block;
+.animate-text {
+    display: inline-block;
 }
 
-.animate-text, .main-text{
+.animate-text,
+.main-text {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.animate-text h1, .main-text h1{
+.animate-text h1,
+.main-text h1 {
     display: inline;
 }
 
 .main-text h1 {
-  letter-spacing: 0.3em;
+    letter-spacing: 0.3em;
 }
 
-.typed-cursor{
+.typed-cursor {
     font-size: 45px;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -108,264 +111,288 @@ nav {
     animation: blink 0.7s infinite;
 }
 
-.scrolling-section h1{
-  text-shadow: 1px 1px 10px black;
-  padding-top: 0.5em;
-  padding-bottom: 2em;
+.scrolling-section h1 {
+    text-shadow: 1px 1px 10px black;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
 }
 
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.scrolling-section{
-  height: 100%;
-  overflow:hidden;
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.link a{
-  color: white;
-  text-decoration:none;
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.link:hover, .link a:hover, .footer a:hover{
-  -webkit-transition-duration: 0.5s; /* Safari */
-  transition-duration: 0.5s;
-  color: rgba(255, 255, 255, 0.7);
+.scrolling-section {
+    height: 100%;
+    overflow: hidden;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover,
+.link a:hover,
+.footer a:hover {
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
+    transition-duration: 0.5s;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  min-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    min-height: 50px;
 }
 
 .contactDiv {
-  width: 50%;
-  height: 40%;
-  top: 50%;
-  margin: 0 auto 0 auto;
-  background-color: transparent;
-  display: block;
-  padding: 0;
-  position: relative;
-  -webkit-transform: translateY(-70%);
-  -ms-transform: translateY(-70%);
-  transform: translateY(-70%);
+    width: 50%;
+    height: 40%;
+    top: 50%;
+    margin: 0 auto 0 auto;
+    background-color: transparent;
+    display: block;
+    padding: 0;
+    position: relative;
+    -webkit-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+    transform: translateY(-70%);
 }
 
 .contactButton {
-  display: inline-block;
-  position: relative;
-  border: solid;
-  border-width: 2px;
-  border-color: rgba(0, 163, 254, 0.6);
-  color: #00A3FE;
-  background-color: rgba(0,0,0, 0.3);
-
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  vertical-align: middle;
-  line-height: 40px;
-  border-radius: 10px;
-
-  width: 200px;
-  padding: 4px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  margin-top: 5px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  font-size: 1.5em;
-
-  -webkit-transition-duration: 0.6s; /* Safari */
-  transition-duration: 0.6s;
+    display: inline-block;
+    position: relative;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(0, 163, 254, 0.6);
+    color: #00A3FE;
+    background-color: rgba(0, 0, 0, 0.3);
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    vertical-align: middle;
+    line-height: 40px;
+    border-radius: 10px;
+    width: 200px;
+    padding: 4px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    -webkit-transition-duration: 0.6s;
+    /* Safari */
+    transition-duration: 0.6s;
 }
 
 .contactButton:hover {
-  background-color: #00A3FE;
-  color: white;
+    background-color: #00A3FE;
+    color: white;
 }
 
 .contactButton:focus {
-  outline:0;
+    outline: 0;
 }
 
-.contactButton i{
-  line-height: 50px;
-  padding-left: 5px;
-  float: left;
-  font-size: 2em;
+.contactButton i {
+    line-height: 50px;
+    padding-left: 5px;
+    float: left;
+    font-size: 2em;
 }
 
 .contactButton p {
-  padding-left: 25px;
-  float: left;
+    padding-left: 25px;
+    float: left;
 }
 
 .spinner {
-
-  width: 80px;
-  height: 80px;
-
-  border: 5px solid #ffffff;
-  border-top: 7px solid #00A3FE;
-  border-radius: 100%;
-
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-
-  animation: spin 0.5s infinite linear;
-
+    width: 80px;
+    height: 80px;
+    border: 5px solid #ffffff;
+    border-top: 7px solid #00A3FE;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 0.5s infinite linear;
 }
 
 @keyframes spin {
-  /* Spinner animation */
-
+    /* Spinner animation */
     from {
-      transform: rotate(0deg);
-    } to {
-      transform: rotate(360deg);
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 
 #overlay {
-  height: 100%;
-  weight: 100%;
-  background: black;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 9999;
+    height: 100%;
+    weight: 100%;
+    background: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 9999;
 }
 
-.scrolling-section.about-me, .scrolling-section.myinfo, .scrolling-section.contact-me{
-  background-color: black;
+.scrolling-section.about-me,
+.scrolling-section.myinfo,
+.scrolling-section.contact-me {
+    background-color: black;
 }
+
 
 /*For experiences section*/
 
-.row{
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-bottom: 10em;
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-bottom: 10em;
 }
 
 
-  /* Need media query for smaller screens for .logoRow and .logoRow img */
-  .logoRow{
-    height: 15em;
-  }
+/* Need media query for smaller screens for .logoRow and .logoRow img */
 
-  .logoRow img{
+.logoRow {
+    height: 15em;
+}
+
+.logoRow img {
     height: 170px;
     width: 170px;
-
-
     line-height: 60px;
-    -moz-border-radius: 100px; /* or 50% */
-    border-radius: 100px; /* or 50% */
-    background-color: white;
-  }
+    -moz-border-radius: 100px;
+    /* or 50% */
+    border-radius: 100px;
+    /* or 50% */
+    background-color: black;
+}
 
-  .link a{
+.link a {
     color: white;
-    text-decoration:none;
-  }
+    text-decoration: none;
+}
 
-  .education img, .experience img{
+.education img,
+.experience img {
     position: absolute;
     left: 5em;
-  }
+}
 
-  .edInfo{
+.edInfo {
     text-align: left;
-  }
+}
 
-  .edInfo h3{
+.edInfo h3 {
     padding-bottom: 1em;
-  }
+}
 
-  .edInfo h4{
+.edInfo h4 {
     padding-left: 2em;
-  }
+}
 
-  .edInfo ul{
+.edInfo ul {
     padding-left: 5em;
-  }
+}
 
-
-  .carousel, .item, .active{
+.carousel,
+.item,
+.active {
     height: 95%;
-  }
+}
 
-  .carousel-inner{
+.carousel-inner {
     height: 100%;
-  }
+}
 
-  .experience h1, .about-me h1, .contact-me h1{
+.experience h1,
+.about-me h1,
+.contact-me h1 {
     text-align: left;
     letter-spacing: 0.3em;
     padding-top: 0.5em;
     padding-left: 1em;
     font-size: 2em;
-  }
+}
 
-  .aboutMe-Text {
+.aboutMe-Text {
     padding-top: 40px;
     padding-right: 20%;
     padding-left: 20%;
     letter-spacing: 0.1em;
-  }
+}
 
-  .aboutMe-Text h2 {
+.aboutMe-Text h2 {
     text-align: left;
     font-size: 1.8em;
     line-height: 35px;
-  }
+}
 
-  .aboutMe-Text h3 {
+.aboutMe-Text h3 {
     text-align: left;
     font-size: 1.6em;
     line-height: 35px;
-  }
+}
 
-  .aboutMe-Text h4 {
+.aboutMe-Text h4 {
     padding-top: 25px;
     text-align: left;
     font-size: 1.3em;
     line-height: 35px;
-  }
+}
 
-
-  span.highlight {
+span.highlight {
     background-color: rgba(0, 163, 254, 0.8);
     padding: 5px 5px;
-    box-shadow:5px 0 0 #000, -5px 0 0 #000;
-  }
+    box-shadow: 5px 0 0 #000, -5px 0 0 #000;
+}
 
-  /*
+
+/*
   .experience h3, .about-me h3, .contact-me h3:after{
     background: #C8C8FF;
     position: absolute;
@@ -376,148 +403,133 @@ nav {
     width: 100%;
   }*/
 
-  .scrolling-section h1{
+.scrolling-section h1 {
     text-shadow: 1px 1px 10px black;
     padding-top: 0.5em;
     padding-bottom: 2em;
-  }
+}
 
-  .item{
+.item {
     padding-top: 1em;
-  }
+}
 
-  .item .row{
+.item .row {
     padding-top: 3em;
-  }
+}
 
-  hr{
+hr {
     border: 0;
     height: 3px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 163, 254, 0.75), rgba(255, 255, 255, 0));
-  }
+}
 
-  #wrapperDiv {
+#wrapperDiv {
     position: relative;
     width: 100%;
     height: 80%;
-  }
+}
 
-  .footer {
+.footer {
     width: 100%;
     position: absolute;
     bottom: 0;
     text-align: center;
-  }
+}
 
-  .footer a{
+.footer a {
     color: white;
-    text-decoration:none;
+    text-decoration: none;
     letter-spacing: 0.4em;
-  }
+}
 
-  #logo {
+#logo {
     display: none;
-  }
+}
 
-  /*Media query for mobile devices*/
-  @media (max-width: 575px) {
 
+/*Media query for mobile devices*/
+
+@media (max-width: 575px) {
     .contact-me {
-      /*bug in safari*/
-      overflow-y: scroll;
+        /*bug in safari*/
+        overflow-y: scroll;
     }
-
-    .animate-text h1, .main-text h1{
+    .animate-text h1,
+    .main-text h1 {
         font-size: 2.2em;
     }
-
     .main-text h4 {
-      font-size: 1.3em;
+        font-size: 1.3em;
     }
-
-    .edInfo h3{
-      padding-bottom: 0.5em;
-      font-size: 2em;
+    .edInfo h3 {
+        padding-bottom: 0.5em;
+        font-size: 2em;
     }
-
-    .edInfo h4{
-      padding-left: 1em;
-      font-size: 1em;
+    .edInfo h4 {
+        padding-left: 1em;
+        font-size: 1em;
     }
-
-    .edInfo ul{
-      padding-left: 3em;
+    .edInfo ul {
+        padding-left: 3em;
     }
-
-    .logoRow img{
-      height: 100px;
-      width: 100px;
+    .logoRow img {
+        height: 100px;
+        width: 100px;
     }
-
-    .education img, .experience img{
-      position: absolute;
-      left: 2em;
+    .education img,
+    .experience img {
+        position: absolute;
+        left: 2em;
     }
-
-    .experience h1, .contact-me h1{
-      font-size: 1.2em;
-      line-height: 1.9em;
+    .experience h1,
+    .contact-me h1 {
+        font-size: 1.2em;
+        line-height: 1.9em;
     }
-
     .about-me h1 {
-      font-size: 1.2em;
-      line-height: 0.5em;
+        font-size: 1.2em;
+        line-height: 0.5em;
     }
-
     .contactDiv {
-      width: 50%;
-      height: 70%;
-      top: 45%;
+        width: 50%;
+        height: 70%;
+        top: 45%;
     }
-
     .contactButton {
-      font-size: 1.4em;
-      padding-bottom: 3px;
-      padding-top: 3px;
-      margin-top: 3px;
+        font-size: 1.4em;
+        padding-bottom: 3px;
+        padding-top: 3px;
+        margin-top: 3px;
     }
-
-    .contactButton i{
-      font-size: 1.7em;
+    .contactButton i {
+        font-size: 1.7em;
     }
-
-    .link button{
-      color: white;
+    .link button {
+        color: white;
     }
-
     .aboutMe-Text {
-      padding-top: 10px;
-      padding-right: 10%;
-      padding-left: 10%;
-      letter-spacing: 0.1em;
+        padding-top: 10px;
+        padding-right: 10%;
+        padding-left: 10%;
+        letter-spacing: 0.1em;
     }
-
     .aboutMe-Text h2 {
-      text-align: left;
-      font-size: 1.5em;
-      line-height: 35px;
+        text-align: left;
+        font-size: 1.5em;
+        line-height: 35px;
     }
-
     .aboutMe-Text h3 {
-      text-align: left;
-      font-size: 1.3em;
-      line-height: 35px;
+        text-align: left;
+        font-size: 1.3em;
+        line-height: 35px;
     }
-
     .aboutMe-Text h4 {
-      padding-top: 25px;
-      text-align: left;
-      font-size: 1em;
-      line-height: 35px;
+        padding-top: 25px;
+        text-align: left;
+        font-size: 1em;
+        line-height: 35px;
     }
-
-    .about-me{
-      height: 150%;
+    .about-me {
+        height: 150%;
     }
-
-  }
+}
